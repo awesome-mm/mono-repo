@@ -15,6 +15,8 @@
 9. 신규 Vite 프로젝트에 **Playwright를 이용한 E2E 테스트 환경 구축**
 10. **빌드 시 환경 분기 처리**: `prod`, `dev`, `qa(stage)` 적용
 11. 이후부터는 **회사 코드 적용** → 비공개 레포지토리로 재구성
+12. 글로벌 설정을 위해 .prettierrc.js, .eslintrc.js .vscode/setting.json root에 지정
+13. 공통 ui IntelliSense 기능 추가 (자동완성)
 
 ---
 
@@ -24,36 +26,37 @@
 npx create-turbo@latest
 ```
 
-##  apps안에 react vite 생성
+## apps안에 react vite 생성
 
 ```bash
   cd ./apps
   pnpm create vite@latest vite-app
 ```
 
-
-##  apps안에 프로젝트 실행
+## apps안에 프로젝트 실행
 
 ```bash
 pnpm --filter [프로젝트명] start:dev
 ```
 
-##  Vite Config (Webpack + CRACO 프로젝트 마이그레이션용)
+## Vite Config (Webpack + CRACO 프로젝트 마이그레이션용)
 
 ```ts
-import { defineConfig } from 'vite'
-import svgr from 'vite-plugin-svgr'
-import { withFilter } from '@rollup/pluginutils'
+import { defineConfig } from "vite";
+import svgr from "vite-plugin-svgr";
+import { withFilter } from "@rollup/pluginutils";
 
 plugins: [
-    withFilter(
-      svgr({ /* 옵션 */ }),
-      {
-        load: {
-          // 모든 .svg .svgr 파일을 필터 처리
-          id: /\.svg(\?react)?$/
-        }
-      }
-    )
-  ]
+  withFilter(
+    svgr({
+      /* 옵션 */
+    }),
+    {
+      load: {
+        // 모든 .svg .svgr 파일을 필터 처리
+        id: /\.svg(\?react)?$/,
+      },
+    },
+  ),
+];
 ```
