@@ -17,6 +17,7 @@
 11. 이후부터는 **회사 코드 적용** → 비공개 레포지토리로 재구성
 12. 글로벌 설정을 위해 .prettierrc.js, .eslintrc.js .vscode/setting.json root에 지정
 13. 공통 ui IntelliSense 기능 추가 (자동완성)
+14. 이후부터는 회사 코드 적용 → 비공개 레포지토리로 재구성
 
 ---
 
