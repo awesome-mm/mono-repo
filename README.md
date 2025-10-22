@@ -14,10 +14,9 @@
 8. 기존 **React + Webpack + CRACO 프로젝트 → Vite로 마이그레이션**
 9. 신규 Vite 프로젝트에 **Playwright를 이용한 E2E 테스트 환경 구축**
 10. **빌드 시 환경 분기 처리**: `prod`, `dev`, `qa(stage)` 적용
-11. 이후부터는 **회사 코드 적용** → 비공개 레포지토리로 재구성
-12. 글로벌 설정을 위해 .prettierrc.js, .eslintrc.js .vscode/setting.json root에 지정
-13. 공통 ui IntelliSense 기능 추가 (자동완성)
-14. 이후부터는 회사 코드 적용 → 비공개 레포지토리로 재구성
+11. 글로벌 설정을 위해 .prettierrc.js, .eslintrc.js .vscode/setting.json root에 지정
+12. 공통 ui IntelliSense 기능 추가 (자동완성)
+13. 이후부터는 회사 코드 적용 → 비공개 레포지토리로 재구성
 
 ---
 
