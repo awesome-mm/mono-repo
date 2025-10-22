@@ -9,7 +9,7 @@ function App() {
   return (
     <>
       <div>
-        <h1>Vite + React</h1>
+        <Button appName="vite-app">Open alert</Button>
         <a href="https://vite.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
         </a>

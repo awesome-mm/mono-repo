@@ -1,0 +1,13 @@
+{
+  "name": "@repo/prettier-config",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "main": "prettier.config.mjs",
+  "exports": {
+    ".": "./prettier.config.mjs"
+  },
+  "devDependencies": {
+    "prettier": "^3.3.3"
+  }
+}
