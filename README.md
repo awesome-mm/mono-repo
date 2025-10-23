@@ -61,3 +61,41 @@ plugins: [
   ),
 ];
 ```
+
+## apps안에서 공통 ui 불러오기
+
+```json
+ "dependencies": {
+    "@repo/ui": "workspace:*",
+  },
+```
+
+```ts
+import { Button } from "@repo/ui/Button";
+
+function App() {
+  return (
+      <div>
+        <Button appName="vite-app">공통 ui 버튼</Button>
+      </div>
+  );
+}
+```
+
+## apps안에서 공통 ui IntelliSense [자동완성] 추가하기 tsconfig.json
+
+```json
+{
+  "extends": "@repo/typescript-config/react-library.json",
+  "compilerOptions": {
+    "outDir": "dist"
+  },
+  "include": ["src"],
+  "exclude": ["node_modules"]
+}
+```
+
+## 전체 prettier, eslint 설정 - root
+
+- .eslintrc.js 참조
+- .prettierrc.js 참조
