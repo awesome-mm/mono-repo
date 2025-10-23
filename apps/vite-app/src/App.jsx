@@ -10,13 +10,7 @@ function App() {
   return (
     <>
       <div>
-        <Button appName="vite-app">Open alert</Button>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+        <Button appName="vite-app">공통 ui 버튼</Button>
       </div>
       <h1>Vite + React</h1>
       <div className="card">

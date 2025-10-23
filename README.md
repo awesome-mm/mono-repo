@@ -36,7 +36,8 @@ npx create-turbo@latest
 ## apps안에 프로젝트 실행
 
 ```bash
-pnpm --filter [프로젝트명] start:dev
+pnpm --filter [프로젝트명] dev
+ex) $ pnpm --filter vite-app dev
 ```
 
 ## Vite Config (Webpack + CRACO 프로젝트 마이그레이션용)
